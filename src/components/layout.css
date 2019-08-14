@@ -7,6 +7,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 article,
 aside,
@@ -40,12 +41,14 @@ template {
   display: none;
 }
 a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
+  color: #2f2f2f;
+  text-decoration: none;
+  transition: 0.2s;
 }
 a:active,
 a:hover {
-  outline-width: 0;
+  color: #00dad3;
+  text-decoration: underline;
 }
 abbr[title] {
   border-bottom: none;
@@ -185,7 +188,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 112.5%/1.45em "Roboto", serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -200,7 +203,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -322,6 +325,7 @@ h6 {
   font-size: 0.78405rem;
   line-height: 1.1;
 }
+
 hgroup {
   margin-left: 0;
   margin-right: 0;
